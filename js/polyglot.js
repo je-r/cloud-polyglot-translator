@@ -1,6 +1,6 @@
 /* polyglot.js  */
 
-var jsVersion = 12;
+var jsVersion = 14;
 
 function resetIt()
 {
@@ -43,10 +43,9 @@ function processWebserviceResult(theResponseText, theLabel, targetLang)
 	
 	var sourceText = $("input#theSource").val();
 	var sourceLanguage = "en";
-	var targetLanguage = "de";
 	var copyGUI = "<input class='polyglotButton' "+
 		" data-clipboard-target='#theText4"+targetLang+"' type='button' value='Copy to clipboard' >" +
-	    " <a href='https://translate.google.com/#"+sourceLanguage+"/"+targetLanguage+"/"+sourceText+"'>Google Translate</a>";
+	    " <a href='https://translate.google.com/#"+sourceLanguage+"/"+targetLang+"/"+sourceText+"'>Google Translate</a>";
 	$("#msgid").append("<br>\n"+theLabel+": <span class='theText' id='theText4"+targetLang+"'>"+
 		translationResult+"</span>"+speakGUI+copyGUI);
 		
