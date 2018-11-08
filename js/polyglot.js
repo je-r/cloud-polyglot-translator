@@ -45,7 +45,7 @@ function processWebserviceResult(theResponseText, theLabel, targetLang)
 	var sourceLanguage = "en";
 	var copyGUI = "<input class='polyglotButton' "+
 		" data-clipboard-target='#theText4"+targetLang+"' type='button' value='Copy to clipboard' >" +
-	    " <a href='https://translate.google.com/#"+sourceLanguage+"/"+targetLang+"/"+sourceText+"'>Google Translate</a>";
+	    " <a href='https://translate.google.com/#"+sourceLanguage+"/"+targetLang+"/"+sourceText+"' target='_blank' >Google Translate</a>";
 	$("#msgid").append("<br>\n"+theLabel+": <span class='theText' id='theText4"+targetLang+"'>"+
 		translationResult+"</span>"+speakGUI+copyGUI);
 		
