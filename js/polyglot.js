@@ -1,6 +1,6 @@
 /* polyglot.js  */
 
-var jsVersion = 14;
+var jsVersion = 15;
 
 function resetIt()
 {
